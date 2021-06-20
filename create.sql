@@ -1,25 +1,25 @@
-create table publisher(
-	id  integer primary key,
-	name text,
-	country text
-	);
+CREATE TABLE  publisher(
+  id INTEGER PRIMARY KEY,
+  name VARCHAR(255),
+  country VARCHAR(255)
+  );
 
-create table books(
-	id  integer primary key,
-	title text,
-	publisher integer,
-	foreign key (publisher) references publisher(id)
-	);
+CREATE TABLE books(
+  id INTEGER PRIMARY KEY,
+  title VARCHAR(255),
+  publisher INTEGER,
+  FOREIGN KEY(publisher) REFERENCES  publisher(id)
+  );
+  
+CREATE TABLE  subjects(
+  id INTEGER PRIMARY KEY,
+  name VARCHAR(255)
+  );
 
-create table subjects(
-	id  integer primary key,
-	name text
-	);
-
-create table books_subjects(
-	book integer,
-	subject integer,
-	foreign key (book) references books(id),
-	foreign key (subject) references subjects(id)
-	);
-
+CREATE TABLE books_subjects(
+   book INTEGER,
+   subject INTEGER,
+   FOREIGN KEY(book) REFERENCES books(id),
+   FOREIGN KEY(subject) REFERENCES  subjects(id)
+  );
+  

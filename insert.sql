@@ -1,49 +1,47 @@
-insert into publisher (name, country) values ("PHI","India");
+INSERT INTO publisher (name,country) VALUES ('PHI','India');
+INSERT INTO publisher (name,country) VALUES ('Harper','USA');
+INSERT INTO publisher (name,country) VALUES ('GCP','USA');
+INSERT INTO publisher (name,country) VALUES ('Avery','USA');
+INSERT INTO publisher (name,country) VALUES ('Del Rey','UK');
+INSERT INTO publisher (name,country) VALUES ('Vintage','UK');
 
-insert into publisher (name, country) values ("Harper","USA");
+INSERT INTO books (title,publisher) VALUES ('The C Programming Language',1);
+INSERT INTO books (title,publisher) VALUES ('The Go Programming Language',1);
+INSERT INTO books (title,publisher) VALUES ('The UNIX Programming Environment',1);
+INSERT INTO books (title,publisher) VALUES ('Cryptonomicon',2);
+INSERT INTO books (title,publisher) VALUES ('Deep Work',3);
+INSERT INTO books (title,publisher) VALUES ('Atomic Habits',4);
+INSERT INTO books (title,publisher) VALUES ('The City and The City',5);
+INSERT INTO books (title,publisher) VALUES ('The Great War for Civilisation',6);
 
-insert into publisher (name, country) values ("GCP","USA");
+INSERT INTO subjects(name) VALUES('C');
+INSERT INTO subjects(name) VALUES('UNIX');
+INSERT INTO subjects(name) VALUES('Technology');
+INSERT INTO subjects(name) VALUES('Science Fiction');
+INSERT INTO subjects(name) VALUES('Productivity');
+INSERT INTO subjects(name) VALUES('Psychology');
+INSERT INTO subjects(name) VALUES('Politics');
+INSERT INTO subjects(name) VALUES('History');
+INSERT INTO subjects(name) VALUES('Go');
 
-insert into publisher (name, country) values ("Avery","USA");
+INSERT INTO books_subjects (book,subject) VALUES (1,1);
+INSERT INTO books_subjects (book,subject) VALUES (1,2);
+INSERT INTO books_subjects (book,subject) VALUES (1,3);
+INSERT INTO books_subjects (book,subject) VALUES (2,9);
+INSERT INTO books_subjects (book,subject) VALUES (2,3);
+INSERT INTO books_subjects (book,subject) VALUES (3,2);
+INSERT INTO books_subjects (book,subject) VALUES (3,3);
+INSERT INTO books_subjects (book,subject) VALUES (4,3);
+INSERT INTO books_subjects (book,subject) VALUES (4,4);
+INSERT INTO books_subjects (book,subject) VALUES (5,3);
+INSERT INTO books_subjects (book,subject) VALUES (5,5);
+INSERT INTO books_subjects (book,subject) VALUES (6,5);
+INSERT INTO books_subjects (book,subject) VALUES (6,6);
+INSERT INTO books_subjects (book,subject) VALUES (7,4);
+INSERT INTO books_subjects (book,subject) VALUES (7,7);
+INSERT INTO books_subjects (book,subject) VALUES (8,7);
+INSERT INTO books_subjects (book,subject) VALUES (8,8);
 
-insert into publisher (name, country) values ("Del Rey","UK");
-
-insert into publisher (name, country) values ("Vintage","UK");
 
 
 
-insert into books (title, publisher) values ("The C Programming Language","PHI");
-insert into books (title, publisher) values ("The Go Programming Language","PHI");
-insert into books (title, publisher) values ("The UNIX Programming Environment","PHI");
-insert into books (title, publisher) values ("Cryptonomicon","Harper");
-insert into books (title, publisher) values ("Deep Work","GCP");
-insert into books (title, publisher) values ("Atomic Habits","Avery");
-insert into books (title, publisher) values ("The City and The City","Del Rey");
-insert into books (title, publisher) values ("The Great War for Civilisation","Vintage");
-
-insert into subjects (name) values ("C");
-insert into subjects (name) values ("UNIX");
-insert into subjects (name) values ("Technology");
-insert into subjects (name) values ("Science Fiction");
-insert into subjects (name) values ("Productivity");
-insert into subjects (name) values ("Psychology");
-insert into subjects (name) values ("Politics");
-insert into subjects (name) values ("History");
-insert into subjects (name) values ("Go");
-
-insert into books_subjects (book,subject) values (1,1)
-insert into books_subjects (book,subject) values (1,2)
-insert into books_subjects (book,subject) values (2,9)
-insert into books_subjects (book,subject) values (2,3)
-insert into books_subjects (book,subject) values (3,2)
-insert into books_subjects (book,subject) values (3,3)
-insert into books_subjects (book,subject) values (4,3)
-insert into books_subjects (book,subject) values (4,4)
-insert into books_subjects (book,subject) values (5,3)
-insert into books_subjects (book,subject) values (5,5)
-insert into books_subjects (book,subject) values (6,5)
-insert into books_subjects (book,subject) values (6,6)
-insert into books_subjects (book,subject) values (7,4)
-insert into books_subjects (book,subject) values (7,7)
-insert into books_subjects (book,subject) values (8,7)
-insert into books_subjects (book,subject) values (8,8)
